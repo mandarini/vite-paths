@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
+import { myLib } from '@myorg/my-lib';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/web',
