@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/my-lib": ["libs/my-lib/src/index.ts"]
+      "@myorg/my-lib": ["libs/my-lib/src/index.ts"],
+      "@vite-paths/two": ["libs/two/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
