@@ -33,6 +33,6 @@ import { myLib } from '../../libs/my-lib/src/index';
 then, obviously, it works. But you have to disable the `@nrwl/nx/enforce-module-boundaries` rule for that line:
 
 ```ts
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import { myLib } from '../../libs/my-lib/src/index';
 ```
