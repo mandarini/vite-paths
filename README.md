@@ -1,8 +1,8 @@
 # VitePaths
 
-This project shows the issue described in [nrwl/nx/issues/15277](https://github.com/nrwl/nx/issues/15277).
+This project shows the issue described in [nrwl/nx/issues/17019](https://github.com/nrwl/nx/issues/17019).
 
-The issue is that Vite cannot find a library that is imported in `vite.config.ts`. The `vite-tsconfig-paths` plugin cannot resolve that path.
+The issue is that Vite has issues with a library that is imported in `vite.config.ts`.
 
 ## What this project contains
 
@@ -19,7 +19,9 @@ import { myLib } from '@myorg/my-lib';
 If you run `npx nx serve web` or `npx nx build web` , you'll see the following error:
 
 ```bash
-Cannot find module '@myorg/my-lib'
+failed to load config from /<PATH TO PROJECT>/apps/web/vite.config.ts
+
+ >  NX   Unexpected token 'export'
 ```
 
 ## How to resolve
@@ -30,7 +32,7 @@ If you import the lib with a relative path like this:
 import { myLib } from '../../libs/my-lib/src/index';
 ```
 
-then, obviously, it works. But you have to disable the `@nrwl/nx/enforce-module-boundaries` rule for that line:
+then it works. You have to disable the `@nrwl/nx/enforce-module-boundaries` rule for that line:
 
 ```ts
 // eslint-disable-next-line @nx/enforce-module-boundaries
