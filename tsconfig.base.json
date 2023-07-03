@@ -16,6 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@myorg/my-lib": ["libs/my-lib/src/index.ts"],
+      "@vite-paths/jslv1": ["libs/jslv1/src/index.ts"],
+      "@vite-paths/jslv2": ["libs/jslv2/src/index.ts"],
+      "@vite-paths/jslv3": ["libs/jslv3/src/index.ts"],
+      "@vite-paths/rlv1": ["libs/rlv1/src/index.ts"],
+      "@vite-paths/rlv2": ["libs/rlv2/src/index.ts"],
+      "@vite-paths/rlv3": ["libs/rlv3/src/index.ts"],
       "@vite-paths/two": ["libs/two/src/index.ts"]
     }
   },

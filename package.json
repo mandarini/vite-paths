@@ -9,6 +9,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
     "@nx/cypress": "16.5.0-beta.2",
     "@nx/eslint-plugin": "16.5.0-beta.2",
     "@nx/js": "16.5.0-beta.2",
@@ -22,9 +23,9 @@
     "@types/react-dom": "18.2.6",
     "@typescript-eslint/eslint-plugin": "5.59.7",
     "@typescript-eslint/parser": "5.59.7",
-    "@vitejs/plugin-react": "3.1.0",
-    "@vitest/coverage-c8": "0.25.8",
-    "@vitest/ui": "0.25.8",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/coverage-c8": "^0.32.0",
+    "@vitest/ui": "^0.32.0",
     "cypress": "12.16.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
@@ -38,10 +39,10 @@
     "nx-cloud": "16.0.5",
     "prettier": "^2.6.2",
     "typescript": "5.1.6",
-    "vite": "4.0.5",
-    "vite-plugin-dts": "1.7.3",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "~2.3.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.25.8"
+    "vitest": "^0.32.0"
   }
 }
