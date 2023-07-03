@@ -1,14 +1,17 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
+import { jslv1 } from '@vite-paths/jslv1';
+import { Rlv1 } from '@vite-paths/rlv1';
+import { Rlv2 } from '@vite-paths/rlv2';
+import { Rlv3 } from '@vite-paths/rlv3';
 
-import NxWelcome from './nx-welcome';
+console.log(jslv1());
 
 export function App() {
   return (
     <>
-      <NxWelcome title="web" />
-
-      <div />
+      <p>Hello</p>
+      <Rlv1 />
+      <Rlv2 />
+      <Rlv3 />
     </>
   );
 }
