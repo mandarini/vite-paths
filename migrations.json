@@ -1,60 +1,12 @@
 {
   "migrations": [
     {
+      "version": "16.5.0-beta.5",
+      "description": "Change vite-tsconfig-paths plugin for first party nx-vite-tsconfig-paths plugin",
       "cli": "nx",
-      "version": "16.3.0-beta.2",
-      "description": "Remove @types/react-router-dom from package.json",
-      "implementation": "./src/migrations/update-16-3-0/remove-types-react-router-dom-package",
-      "package": "@nx/react",
-      "name": "remove-types-react-router-dom"
-    },
-    {
-      "cli": "nx",
-      "version": "16.4.0-beta.10",
-      "description": "Remove tsconfig.e2e.json and add settings to project tsconfig.json. tsConfigs executor option is now deprecated. The project level tsconfig.json file should be used instead.",
-      "implementation": "./src/migrations/update-16-4-0/tsconfig-sourcemaps",
-      "package": "@nx/cypress",
-      "name": "update-16-3-0-remove-old-tsconfigs"
-    },
-    {
-      "cli": "nx",
-      "version": "15.3.1-beta.0",
-      "description": "Remove projects property from vite-tsconfig-paths plugin in vite.config.ts files.",
-      "factory": "./src/migrations/update-15-3-1/update-vite-tsconfig-paths",
+      "implementation": "./src/migrations/update-16-5-0-change-ts-paths-plugin/change-ts-paths-plugin",
       "package": "@nx/vite",
-      "name": "update-vite-tsconfig-paths"
-    },
-    {
-      "cli": "nx",
-      "version": "15.3.4-beta.0",
-      "description": "Set the mode in configurations to match the configurationName.",
-      "factory": "./src/migrations/update-15-3-4/set-mode-in-configuration",
-      "package": "@nx/vite",
-      "name": "set-mode-in-configurations"
-    },
-    {
-      "cli": "nx",
-      "version": "15.4.3-beta.0",
-      "description": "Update @nx/vite:test reportsDirectory and outputs properties to point to correct paths.",
-      "factory": "./src/migrations/update-15-4-3/update-report-directory",
-      "package": "@nx/vite",
-      "name": "update-test-path-placeholder-vars"
-    },
-    {
-      "cli": "nx",
-      "version": "16.0.0-beta.1",
-      "description": "Replace @nx/vite with @nx/vite",
-      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
-      "package": "@nx/vite",
-      "name": "update-16-0-0-add-nx-packages"
-    },
-    {
-      "version": "16.4.1-beta.0",
-      "description": "Changes the testFile config in the vite:test exectutor from a string to an array of strings",
-      "cli": "nx",
-      "implementation": "./src/migrations/update-16-4-1-update-test-file-config/update-16-4-1-test-file-config",
-      "package": "@nx/vite",
-      "name": "update-16-4-1-test-file-config"
+      "name": "16-5-0-change-ts-paths-plugin"
     }
   ]
 }
