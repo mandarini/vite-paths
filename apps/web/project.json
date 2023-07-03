@@ -10,7 +10,7 @@
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/web",
-        "buildLibsFromSource": true
+        "buildLibsFromSource": false
       },
       "configurations": {
         "development": {
