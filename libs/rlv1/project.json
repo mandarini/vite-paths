@@ -35,6 +35,43 @@
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/libs/rlv1"
       }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/rlv1/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/rlv1",
+        "configDir": "libs/rlv1/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "rlv1:build-storybook",
+        "staticFilePath": "dist/storybook/rlv1"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "rlv1:build-storybook:ci"
+        }
+      }
     }
   }
 }
